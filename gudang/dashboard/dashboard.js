@@ -1,7 +1,3 @@
-document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
-
 $.ajax({
   url: "http://localhost:8080/api/alokasi",
   method: "GET",
