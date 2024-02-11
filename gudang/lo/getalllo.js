@@ -144,7 +144,10 @@ $("#tamilkanlo").click(function () {
                 ")",
               muatan: lo.total,
               status: lo.status_dokumen_muat,
-              link: "https://delapandelapanlogistics.com/gudang/lo/detail/" + lo.nomor_lo,
+              link: {
+                link1: "https://delapandelapanlogistics.com/gudang/lo/detail/" + lo.nomor_lo,
+                link2: "lo/downloadPDFLO/" + $('#alokasi').val() + "/" + lo.nomor_lo,
+              }
             });
           });
           $("#tablelo").DataTable({
@@ -172,9 +175,13 @@ $("#tamilkanlo").click(function () {
                 render: function (data, type, row, meta) {
                   return (
                     "<a href=" +
-                    data +
+                    data.link1 +
                     " type='button' class='text-primary' style='border-radius: 5px;'>" +
-                    "<i class='fas fa-search-plus'></i></a>"
+                    "<i class='fas fa-search-plus'></i></a>" +
+                    "<a href=" +
+                    data.link2 +
+                    " type='button' class='text-danger ml-3' style='border-radius: 5px;'>" +
+                    "<i class='fas fa-download'></i></a>"
                   );
                 },
                 className: "text-center",
