@@ -150,7 +150,7 @@ $("#tamilkanlo").click(function () {
               }
             });
           });
-          $("#tablelo").DataTable({
+          $("#tablelo1").DataTable({
             paging: true,
             info: false,
             language: {
