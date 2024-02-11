@@ -1,4 +1,4 @@
-const datalo = $("#datalo");
+const datalo = $("#datalo1");
 
 function loadingswal() {
   Swal.fire({
@@ -122,7 +122,7 @@ $("#tamilkanlo").click(function () {
       success: function (data) {
         if (data.status == "200") {
           $('#filterdatatable').removeClass('d-none');
-          $('#tablelo').removeClass('d-none');
+          $('#tablelo1').removeClass('d-none');
           var datanya = [];
           var nomorwo = "";
           $.each(data.data, function (index, lo) {
@@ -186,8 +186,8 @@ $("#tamilkanlo").click(function () {
           });
         } else {
           $('#filterdatatable').addClass('d-none');
-          $('#tablelo').addClass('d-none');
-          $('#tablelo_paginate').addClass('d-none');
+          $('#tablelo1').addClass('d-none');
+          $('#tablelo1_paginate').addClass('d-none');
           Swal.fire({
             icon: "error",
             title: "Loading Order (LO)",
@@ -206,10 +206,10 @@ $("#tamilkanlo").click(function () {
 
 function cari() {
   var keyword = $("#keyword").val();
-  $("#tablelo").DataTable().search(keyword).draw();
+  $("#tablelo1").DataTable().search(keyword).draw();
 }
 
 function banyaknya() {
   var selectedLength = $("#banyaknya").val();
-  $("#tablelo").DataTable().page.len(selectedLength).draw();
+  $("#tablelo1").DataTable().page.len(selectedLength).draw();
 }
