@@ -170,7 +170,7 @@ $('#prosesupdate').click(function (e) {
           showConfirmButton: false,
           timer: 3000,
         }).then(() => {
-          window.history.back();
+          window.location.reload();
         });
       },
       error: function (error) {
