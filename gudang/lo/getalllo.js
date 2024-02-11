@@ -120,6 +120,7 @@ $("#tamilkanlo").click(function () {
       type: "GET",
       dataType: "json",
       success: function (data) {
+        console.log(data);
         if (data.status == "200") {
           $('#filterdatatable').removeClass('d-none');
           $('#tablelo1').removeClass('d-none');
