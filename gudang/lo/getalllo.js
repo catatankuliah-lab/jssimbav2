@@ -175,10 +175,6 @@ $("#tamilkanlo").click(function () {
                 render: function (data, type, row, meta) {
                   return (
                     "<a href=" +
-                    data.link1 +
-                    " type='button' class='text-primary' style='border-radius: 5px;'>" +
-                    "<i class='fas fa-search-plus'></i></a>" +
-                    "<a href=" +
                     data.link2 +
                     " type='button' class='text-danger ml-3' style='border-radius: 5px;'>" +
                     "<i class='fas fa-download'></i></a>"
