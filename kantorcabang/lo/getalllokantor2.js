@@ -139,7 +139,7 @@ $("#filterLO").on("click", function () {
   } else {
     // DOWNLOAD EXCEL
     document.getElementById("formDownload").action =
-      "https://delapandelapanlogistics.com/kantorcabang/lo/1/downloadexcel/" +
+      "https://delapandelapanlogistics.com/itkantorcabang/lo/1/downloadexcel/" +
       $("#alokasi").val();
 
     var gudang = $("#pilihgudang").val();
@@ -182,7 +182,7 @@ $("#filterLO").on("click", function () {
               muatan: lo.jumlah_penyaluran_januari,
               status: lo.status_dokumen_muat,
               link:
-                "https://delapandelapanlogistics.com/kantorcabang/lo/" +
+                "https://delapandelapanlogistics.com/itkantorcabang/lo/" +
                 $("#alokasi").val() +
                 "/detail/" +
                 lo.nomor_lo,
@@ -277,7 +277,7 @@ $("#filterLO").on("click", function () {
               muatan: lo.jumlah_penyaluran_januari,
               status: lo.status_dokumen_muat,
               link:
-                "https://delapandelapanlogistics.com/kantorcabang/lo/" +
+                "https://delapandelapanlogistics.com/itkantorcabang/lo/" +
                 $("#alokasi").val() +
                 "/detail/" +
                 lo.nomor_lo,
@@ -374,7 +374,7 @@ $("#filterLO").on("click", function () {
               muatan: lo.jumlah_penyaluran_januari,
               status: lo.status_dokumen_muat,
               link:
-                "https://delapandelapanlogistics.com/kantorcabang/lo/" +
+                "https://delapandelapanlogistics.com/itkantorcabang/lo/" +
                 $("#alokasi").val() +
                 "/detail/" +
                 lo.nomor_lo,
@@ -471,7 +471,7 @@ $("#filterLO").on("click", function () {
               muatan: lo.jumlah_penyaluran_januari,
               status: lo.status_dokumen_muat,
               link:
-                "https://delapandelapanlogistics.com/kantorcabang/lo/" +
+                "https://delapandelapanlogistics.com/itkantorcabang/lo/" +
                 $("#alokasi").val() +
                 "/detail/" +
                 lo.nomor_lo,
@@ -570,7 +570,7 @@ $("#filterLO").on("click", function () {
               muatan: lo.jumlah_penyaluran_januari,
               status: lo.status_dokumen_muat,
               link:
-                "https://delapandelapanlogistics.com/kantorcabang/lo/" +
+                "https://delapandelapanlogistics.com/itkantorcabang/lo/" +
                 $("#alokasi").val() +
                 "/detail/" +
                 lo.nomor_lo,
@@ -666,7 +666,7 @@ $("#filterLO").on("click", function () {
               muatan: lo.jumlah_penyaluran_januari,
               status: lo.status_dokumen_muat,
               link:
-                "https://delapandelapanlogistics.com/kantorcabang/lo/" +
+                "https://delapandelapanlogistics.com/itkantorcabang/lo/" +
                 $("#alokasi").val() +
                 "/detail/" +
                 lo.nomor_lo,
