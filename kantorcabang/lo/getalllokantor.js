@@ -1,8 +1,6 @@
 var idkantor = $("#kantor").val();
 const datalo = $("#datalo");
-
-consol.log("cekkkkkk:);
-
+consol.log("cekkkkkk");
 $.ajax({
   url: "https://delapandelapanlogistics.com/api/alokasi",
   method: "GET",
