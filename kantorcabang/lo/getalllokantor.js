@@ -3,7 +3,7 @@ const datalo = $("#datalo");
 // console.log(idkantor);
 
 $.ajax({
-  url: "http://localhost:8080/api/alokasi",
+  url: "https://delapandelapanlogistics.com/api/alokasi",
   method: "GET",
   dataType: "json",
   success: function (data) {
@@ -21,7 +21,7 @@ $.ajax({
 });
 
 $.ajax({
-  url: "http://localhost:8080/api/gudang/kantor/" + idkantor,
+  url: "https://delapandelapanlogistics.com/api/gudang/kantor/" + idkantor,
   method: "GET",
   dataType: "json",
   success: function (data) {
@@ -44,7 +44,7 @@ $.ajax({
 });
 
 $.ajax({
-  url: "http://localhost:8080/api/wilayahkerja/" + idkantor,
+  url: "https://delapandelapanlogistics.com/api/wilayahkerja/" + idkantor,
   type: "GET",
   dataType: "json",
   success: function (data) {
@@ -67,7 +67,7 @@ $.ajax({
 });
 
 $.ajax({
-  url: "http://localhost:8080/api/wilayahkerja/" + idkantor,
+  url: "https://delapandelapanlogistics.com/api/wilayahkerja/" + idkantor,
   method: "GET",
   dataType: "json",
   success: function (data) {
@@ -102,7 +102,7 @@ function showKecamatan() {
   }
   $.ajax({
     url:
-      "http://localhost:8080/api/kecamatan/kabupatenkota/" +
+      "https://delapandelapanlogistics.com/api/kecamatan/kabupatenkota/" +
       kabupatenkotadipilih,
     type: "GET",
     dataType: "json",
@@ -139,7 +139,7 @@ $("#filterLO").on("click", function () {
   } else {
     // DOWNLOAD EXCEL
     document.getElementById("formDownload").action =
-      "http://localhost:8080/kantorcabang/lo/1/downloadexcel/" +
+      "https://delapandelapanlogistics.com/kantorcabang/lo/1/downloadexcel/" +
       $("#alokasi").val();
 
     var gudang = $("#pilihgudang").val();
@@ -150,7 +150,7 @@ $("#filterLO").on("click", function () {
     if ((alokasi != 0, gudang != 0 && kabupaten == 0 && kecamatan == 0)) {
       $.ajax({
         url:
-          "http://localhost:8080/api/lo/" +
+          "https://delapandelapanlogistics.com/api/lo/" +
           alokasi +
           "/gudangbykantor/" +
           gudang,
@@ -187,7 +187,7 @@ $("#filterLO").on("click", function () {
               spm.status_dokumen_muat +
               "</td>" +
               "<td class='text-center'>" +
-              "<a href='http://localhost:8080/gudang/spmbast/detail/" +
+              "<a href='https://delapandelapanlogistics.com/gudang/spmbast/detail/" +
               spm.nomor_spm +
               "' type='button' class='text-primary' style='border-radius: 5px;'>" +
               "<i class='fas fa-search-plus'></i>" +
@@ -223,7 +223,7 @@ $("#filterLO").on("click", function () {
     ) {
       $.ajax({
         url:
-          "http://localhost:8080/api/lo/" +
+          "https://delapandelapanlogistics.com/api/lo/" +
           alokasi +
           "/kabupatenbykantor/" +
           kabupaten,
@@ -259,7 +259,7 @@ $("#filterLO").on("click", function () {
               spm.status_dokumen_muat +
               "</td>" +
               "<td class='text-center'>" +
-              "<a href='http://localhost:8080/gudang/spmbast/detail/" +
+              "<a href='https://delapandelapanlogistics.com/gudang/spmbast/detail/" +
               spm.nomor_spm +
               "' type='button' class='text-primary' style='border-radius: 5px;'>" +
               "<i class='fas fa-search-plus'></i>" +
@@ -295,7 +295,7 @@ $("#filterLO").on("click", function () {
     ) {
       $.ajax({
         url:
-          "http://localhost:8080/api/lo/" +
+          "https://delapandelapanlogistics.com/api/lo/" +
           alokasi +
           "/gudangdankabupaten/" +
           gudang +
@@ -333,7 +333,7 @@ $("#filterLO").on("click", function () {
               spm.status_dokumen_muat +
               "</td>" +
               "<td class='text-center'>" +
-              "<a href='http://localhost:8080/gudang/spmbast/detail/" +
+              "<a href='https://delapandelapanlogistics.com/gudang/spmbast/detail/" +
               spm.nomor_spm +
               "' type='button' class='text-primary' style='border-radius: 5px;'>" +
               "<i class='fas fa-search-plus'></i>" +
@@ -369,7 +369,7 @@ $("#filterLO").on("click", function () {
     ) {
       $.ajax({
         url:
-          "http://localhost:8080/api/lo/" +
+          "https://delapandelapanlogistics.com/api/lo/" +
           alokasi +
           "/kecamatanbykabupaten/" +
           kabupaten +
@@ -407,7 +407,7 @@ $("#filterLO").on("click", function () {
               spm.status_dokumen_muat +
               "</td>" +
               "<td class='text-center'>" +
-              "<a href='http://localhost:8080/gudang/spmbast/detail/" +
+              "<a href='https://delapandelapanlogistics.com/gudang/spmbast/detail/" +
               spm.nomor_spm +
               "' type='button' class='text-primary' style='border-radius: 5px;'>" +
               "<i class='fas fa-search-plus'></i>" +
@@ -443,7 +443,7 @@ $("#filterLO").on("click", function () {
     ) {
       $.ajax({
         url:
-          "http://localhost:8080/api/lo/" +
+          "https://delapandelapanlogistics.com/api/lo/" +
           alokasi +
           "/gudangkabupatenkecamatan/" +
           gudang +
@@ -483,7 +483,7 @@ $("#filterLO").on("click", function () {
               spm.status_dokumen_muat +
               "</td>" +
               "<td class='text-center'>" +
-              "<a href='http://localhost:8080/gudang/spmbast/detail/" +
+              "<a href='https://delapandelapanlogistics.com/gudang/spmbast/detail/" +
               spm.nomor_spm +
               "' type='button' class='text-primary' style='border-radius: 5px;'>" +
               "<i class='fas fa-search-plus'></i>" +
@@ -518,7 +518,7 @@ $("#filterLO").on("click", function () {
       // DATA LOADING ORDER BY ID_KANTOR
       $.ajax({
         url:
-          " http://localhost:8080/api/lo/" +
+          " https://delapandelapanlogistics.com/api/lo/" +
           $("#alokasi").val() +
           "/getbyidkantor/" +
           idkantor,
@@ -551,7 +551,7 @@ $("#filterLO").on("click", function () {
               muatan: lo.jumlah_penyaluran_januari,
               status: lo.status_dokumen_muat,
               link:
-                "http://localhost:8080/kantorcabang/lo/" +
+                "https://delapandelapanlogistics.com/kantorcabang/lo/" +
                 $("#alokasi").val() +
                 "/detail/" +
                 lo.nomor_lo,
