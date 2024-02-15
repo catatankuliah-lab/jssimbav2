@@ -36,13 +36,6 @@ $.ajax({
         "<td>" +
         spm.total +
         "</td>" +
-        "<td class='text-center'>" +
-        "<a href='https://delapandelapanlogistics.com/kantorcabang/lo/1/detail/suratjalan/" +
-        spm.id_sj +
-        "' type='button' class='text-primary' style='border-radius: 5px;'>" +
-        "<i class='fas fa-search-plus'></i>" +
-        "</a>" +
-        "</td>" +
         "</tr >";
       datalo.append(listspm);
     });
