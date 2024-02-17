@@ -134,6 +134,7 @@ $("#tamilkanlo").click(function () {
             datanya.push({
               tanggal_muat: lo.tanggal_muat,
               nomor_wo: nomorwo,
+              nomor_lo: nomor_lo,
               pengirim:
                 lo.nomor_mobil +
                 " / " +
