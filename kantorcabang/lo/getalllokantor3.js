@@ -139,9 +139,8 @@ $("#filterLO").on("click", function () {
   } else {
     // DOWNLOAD EXCEL
     document.getElementById("formDownload").action =
-      "https://delapandelapanlogistics.com/itkantorcabang/lo/1/downloadexcel/" +
+      "https://delapandelapanlogistics.com/itkantorcabang/lo/$("#alokasi").val()/downloadexcel/" +
       $("#alokasi").val();
-
     var gudang = $("#pilihgudang").val();
     var kabupaten = $("#pilihkabupatenkota").val();
     var kecamatan = $("#pilihkecamatan").val();
