@@ -170,7 +170,6 @@ $("#filterLO").on("click", function () {
             datanya.push({
               tanggal_muat: lo.tanggal_muat,
               gudang: lo.nama_gudang,
-              nomor_lo: lo.nomor_lo,
               pengirim:
                 lo.nomor_mobil +
                 " / " +
