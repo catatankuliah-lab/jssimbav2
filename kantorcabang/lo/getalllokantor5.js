@@ -200,7 +200,6 @@ $("#filterLO").on("click", function () {
             columns: [
               { data: "tanggal_muat" },
               { data: "gudang" },
-              { data: "nomor_lo" },
               { data: "pengirim" },
               { data: "muatan" },
               { data: "status" },
