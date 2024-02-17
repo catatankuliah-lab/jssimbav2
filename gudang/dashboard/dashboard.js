@@ -18,7 +18,7 @@ $.ajax({
 
 $("#alokasi").on("change", function () {
   const alokasidipilih = $("#alokasi").val();
-  if (alokasidipilih == "1") {
+  if (alokasidipilih != "0") {
     prosestampilkandashboard(alokasidipilih);
   }
 });
